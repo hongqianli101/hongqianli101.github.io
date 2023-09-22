@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <style>
+        body {
+            font-family: Trebuchet MS, sans-serif;
+            background-color: #01893f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-container {
+            background-color: #01893f;
+            padding: 20px;
+        }
+
+        .game-header {
+            color: yellow;
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .game-header-num {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 60px);
+            gap: 50px;
+            padding-bottom: 60px;
+        }
+
+        .hole img {
+            width: 100%;
+            display: block;
+        }
+
+        .reset-button {
+            margin-top: 20px;
+            width: 250px; 
+            height: 50px; 
+            padding: 10px 20px;
+            border: 2px solid yellow; 
+            background-color: #01893f;
+            color: yellow;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-section{
+            text-align: center;
+        }
+
+        .reset-button:hover {
+            background-color: #494949;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="game-timer">Timer: </div>
+            <div class="game-score">Score: </div>
+        </div>
+        <div class="game-header-num">
+            <div class="game-timer">0</div>
+            <div class="game-score">0 </div>
+        </div>
+        <div class="game-grid">
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+            <div class="hole"><img src="https://live.staticflickr.com/65535/53181690026_2483f5c35a_o.png" alt="Hole"> </div>
+        </div>
+        <div class="button-section">
+        <button class="reset-button">Reset Game</button>
+        </div>
+    </div>
+</body>
+</html>
